@@ -63,6 +63,11 @@
                                     <constraint firstItem="wtA-Mr-pwq" firstAttribute="leading" secondItem="jmj-1K-G80" secondAttribute="leading" id="wNl-HO-VSa"/>
                                     <constraint firstItem="wtA-Mr-pwq" firstAttribute="leading" secondItem="rSZ-Gc-hfh" secondAttribute="leadingMargin" constant="8" id="xt3-aD-aHb"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" name="main"/>
