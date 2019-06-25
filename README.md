@@ -1,6 +1,6 @@
 # TemplateiOsApp
 
-This repository contains an iOS Template project using a movie database API from TMDb and aims at showing how to use
+This repository contains an iOS template project using a movie database API from TMDb and aims at showing how to use
 the three main types of view you may have to use while building an app namely a form, a list and a detail item.
 
 Furthermore you may find two branches that showcase the use of MVC and MVVM alongside with reactive programming pattern.
