@@ -35,6 +35,11 @@
 		D14BF95E22BFFA7000E214FD /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14BF95D22BFFA7000E214FD /* MovieTableViewCell.xib */; };
 		D14BF96122C01A6F00E214FD /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14BF95F22C01A6F00E214FD /* PINCache.framework */; };
 		D14BF96222C01A6F00E214FD /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14BF96022C01A6F00E214FD /* PINRemoteImage.framework */; };
+		D14BF96622C2195100E214FD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96522C2195100E214FD /* LoginViewModel.swift */; };
+		D14BF96822C2196C00E214FD /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96722C2196C00E214FD /* MovieListViewModel.swift */; };
+		D14BF96A22C2198C00E214FD /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96922C2198C00E214FD /* MovieDetailViewModel.swift */; };
+		D14BF96C22C2207500E214FD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96B22C2207500E214FD /* BaseViewModel.swift */; };
+		D14BF96E22C2250800E214FD /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96D22C2250800E214FD /* ErrorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		D14BF95D22BFFA7000E214FD /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		D14BF95F22C01A6F00E214FD /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		D14BF96022C01A6F00E214FD /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
+		D14BF96522C2195100E214FD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D14BF96722C2196C00E214FD /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		D14BF96922C2198C00E214FD /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		D14BF96B22C2207500E214FD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D14BF96D22C2250800E214FD /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				D14BF94422BF9D5700E214FD /* Movie.swift */,
+				D14BF96D22C2250800E214FD /* ErrorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +189,10 @@
 		D14BF94722BFA77B00E214FD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D14BF96522C2195100E214FD /* LoginViewModel.swift */,
+				D14BF96722C2196C00E214FD /* MovieListViewModel.swift */,
+				D14BF96922C2198C00E214FD /* MovieDetailViewModel.swift */,
+				D14BF96B22C2207500E214FD /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -335,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14BF96E22C2250800E214FD /* ErrorModel.swift in Sources */,
 				D14BF8F722BEC28A00E214FD /* LoginViewController.swift in Sources */,
 				D14BF8F522BEC28A00E214FD /* AppDelegate.swift in Sources */,
 				D14BF95A22BFE4CA00E214FD /* MovieTableViewCell.swift in Sources */,
@@ -342,7 +358,11 @@
 				D14BF94B22BFB5AF00E214FD /* MovieApi.swift in Sources */,
 				D14BF95422BFE0A900E214FD /* MovieDetailViewController.swift in Sources */,
 				D14BF95222BFE08D00E214FD /* MovieListViewController.swift in Sources */,
+				D14BF96C22C2207500E214FD /* BaseViewModel.swift in Sources */,
+				D14BF96822C2196C00E214FD /* MovieListViewModel.swift in Sources */,
+				D14BF96A22C2198C00E214FD /* MovieDetailViewModel.swift in Sources */,
 				D14BF94522BF9D5700E214FD /* Movie.swift in Sources */,
+				D14BF96622C2195100E214FD /* LoginViewModel.swift in Sources */,
 				D14BF94222BF90B000E214FD /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

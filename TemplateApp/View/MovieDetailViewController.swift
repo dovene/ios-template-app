@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 import PINRemoteImage
+import RxSwift
+import RxCocoa
 
 class MovieDetailViewController: UIViewController {
-    private var movie = Movie()
     @IBOutlet private var titleTextField: UILabel!
     @IBOutlet private var releaseDateTextField: UILabel!
     @IBOutlet private var overviewTextField: UILabel!
@@ -19,32 +20,61 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet private var movieImageView: UIImageView!
     @IBOutlet private var shareView: UIView!
     @IBOutlet private var topTitle: UILabel!
+    private var viewModel : MovieDetailViewModel?
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
         setViewItems()
+        setBindings()
     }
 
     func setViewItems(){
-        overviewTextField.text = movie.overview
-        titleTextField.text = movie.title
-        topTitle.text = movie.title
-        releaseDateTextField.text = movie.releaseDate
-        popularityTextField.text = "Popularité: \(movie.popularity ?? 0.0)"
-        movieImageView.pin_setImage(from: URL(string: movie.getImageUrl())!)
-        let tap = UITapGestureRecognizer(target: self,action: #selector(share))
+        let tap = UITapGestureRecognizer(target: self,action: #selector(shareClicked))
         shareView.addGestureRecognizer(tap)
     }
+    
+    func setBindings(){
+        viewModel?.output.title
+            .bind(to: titleTextField.rx.text)
+            .disposed(by: disposeBag)
+        viewModel?.output.title
+            .bind(to: topTitle.rx.text)
+            .disposed(by: disposeBag)
+        viewModel?.output.overview
+            .bind(to: overviewTextField.rx.text)
+            .disposed(by: disposeBag)
+        viewModel?.output.releaseDate
+            .bind(to: releaseDateTextField.rx.text)
+            .disposed(by: disposeBag)
+        viewModel?.output.popularity
+            .bind(to: popularityTextField.rx.text)
+            .disposed(by: disposeBag)
+        viewModel?.output.movieImage
+            .subscribe(onNext:{ [weak self] url in
+                self?.movieImageView.pin_setImage(from: URL(string: url))
+            })
+            .disposed(by: disposeBag)
+        viewModel?.output.shareClicked
+            .subscribe(onNext:{ [weak self] movie in
+                self?.shareMovie(movie)
+            })
+            .disposed(by: disposeBag)
+    }
 
-    @objc func share(){
+    @objc func shareClicked(){
+        viewModel?.input.clickShare.onNext(())
+    }
+
+    func shareMovie(_ movie: Movie){
         self.shareMessage(message: ["\(String(describing: movie.title)) ","\(String(describing: movie.overview))"], completion: { completed in
-                return
+            return
         })
     }
 
-    func setMovie(_ movie: Movie){
-        self.movie = movie
+    func setViewModel(_ viewModel: MovieDetailViewModel){
+        self.viewModel = viewModel
     }
 
     func setNavigationBar(){

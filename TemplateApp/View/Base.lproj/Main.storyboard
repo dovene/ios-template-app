@@ -98,9 +98,12 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="197" id="jFH-tD-kd6"/>
+                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Party" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSB-Nk-dWz">
-                                        <rect key="frame" x="38" y="224" width="338" height="66"/>
+                                        <rect key="frame" x="38" y="150" width="338" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="mlh-2R-Msm"/>
                                         </constraints>
@@ -113,9 +116,8 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Tu4-ST-WNp" secondAttribute="trailing" id="66P-F7-f4V"/>
                                     <constraint firstItem="QN4-yc-6xk" firstAttribute="leading" secondItem="kKD-Mn-4LN" secondAttribute="leading" constant="38" id="6hE-E9-g25"/>
-                                    <constraint firstItem="vSB-Nk-dWz" firstAttribute="top" secondItem="kKD-Mn-4LN" secondAttribute="top" constant="224" id="DYK-zw-vyE"/>
+                                    <constraint firstItem="vSB-Nk-dWz" firstAttribute="top" secondItem="kKD-Mn-4LN" secondAttribute="top" constant="150" id="DYK-zw-vyE"/>
                                     <constraint firstAttribute="trailing" secondItem="QN4-yc-6xk" secondAttribute="trailing" constant="38" id="MCZ-yK-Ehj"/>
-                                    <constraint firstItem="QN4-yc-6xk" firstAttribute="top" secondItem="vSB-Nk-dWz" secondAttribute="bottom" constant="54" id="Njl-yf-frz"/>
                                     <constraint firstItem="vSB-Nk-dWz" firstAttribute="leading" secondItem="QN4-yc-6xk" secondAttribute="leading" id="QlN-BF-M6k"/>
                                     <constraint firstItem="Tu4-ST-WNp" firstAttribute="leading" secondItem="kKD-Mn-4LN" secondAttribute="leading" id="SkZ-db-i9z"/>
                                     <constraint firstAttribute="bottom" secondItem="Tu4-ST-WNp" secondAttribute="bottom" constant="-23" id="jtd-vC-dhZ"/>

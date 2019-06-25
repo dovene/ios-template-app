@@ -9,10 +9,6 @@
 import UIKit
 import PINRemoteImage
 
-protocol movieTableViewCellDelegate {
-    func onMovieSelected(_ movie: Movie)
-}
-
 class MovieTableViewCell: UITableViewCell {
 
     @IBOutlet weak var holderView: UIView!
@@ -20,9 +16,9 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet private var descriptionTextView: UILabel!
     @IBOutlet private var titleTextView: UILabel!
     @IBOutlet private var movieImageView: UIImageView!
-    public var movieTableViewCellDelegate : movieTableViewCellDelegate?
     private var movie = Movie()
-    
+    public var viewModel : MovieListViewModel?
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,7 +39,8 @@ class MovieTableViewCell: UITableViewCell {
     }
 
     @objc func handleItemTap(){
-        movieTableViewCellDelegate?.onMovieSelected(movie)
+        //movieTableViewCellDelegate?.onMovieSelected(movie)
+        viewModel?.input.selectMovie.onNext(movie)
     }
   
     
