@@ -11,7 +11,6 @@
 		D14BF8F722BEC28A00E214FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BF8F622BEC28A00E214FD /* LoginViewController.swift */; };
 		D14BF8FA22BEC28A00E214FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14BF8F822BEC28A00E214FD /* Main.storyboard */; };
 		D14BF8FC22BEC28C00E214FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14BF8FB22BEC28C00E214FD /* Assets.xcassets */; };
-		D14BF8FF22BEC28C00E214FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14BF8FD22BEC28C00E214FD /* LaunchScreen.storyboard */; };
 		D14BF93122BF1F1100E214FD /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14BF92322BF1F1000E214FD /* RxBlocking.framework */; };
 		D14BF93222BF1F1100E214FD /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14BF92422BF1F1000E214FD /* RxDataSources.framework */; };
 		D14BF93322BF1F1100E214FD /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14BF92522BF1F1000E214FD /* ReactiveMoya.framework */; };
@@ -44,7 +43,6 @@
 		D14BF8F622BEC28A00E214FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D14BF8F922BEC28A00E214FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D14BF8FB22BEC28C00E214FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D14BF8FE22BEC28C00E214FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D14BF90022BEC28C00E214FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D14BF92322BF1F1000E214FD /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		D14BF92422BF1F1000E214FD /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				D14BF94022BF907A00E214FD /* Extensions */,
 				D14BF8F422BEC28A00E214FD /* AppDelegate.swift */,
 				D14BF8FB22BEC28C00E214FD /* Assets.xcassets */,
-				D14BF8FD22BEC28C00E214FD /* LaunchScreen.storyboard */,
 				D14BF90022BEC28C00E214FD /* Info.plist */,
 			);
 			path = TemplateApp;
@@ -276,7 +273,6 @@
 			files = (
 				D14BF94E22BFB88A00E214FD /* Trendings.json in Resources */,
 				D14BF95E22BFFA7000E214FD /* MovieTableViewCell.xib in Resources */,
-				D14BF8FF22BEC28C00E214FD /* LaunchScreen.storyboard in Resources */,
 				D14BF8FC22BEC28C00E214FD /* Assets.xcassets in Resources */,
 				D14BF8FA22BEC28A00E214FD /* Main.storyboard in Resources */,
 			);
@@ -360,14 +356,6 @@
 				D14BF8F922BEC28A00E214FD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D14BF8FD22BEC28C00E214FD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D14BF8FE22BEC28C00E214FD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
