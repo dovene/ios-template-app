@@ -1,0 +1,10 @@
+{
+  "commitish" : "5.0.1",
+  "iOS" : [
+    {
+      "name" : "ReactiveSwift",
+      "hash" : "755345831b614810c6b10c46dd23d40693235bf3c8dbd0247ce6615b86bb4515",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ]
+}

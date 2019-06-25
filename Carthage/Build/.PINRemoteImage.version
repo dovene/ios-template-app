@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "2.1.4",
+  "iOS" : [
+    {
+      "name" : "PINRemoteImage",
+      "hash" : "e178cec9168a6d8fd6d9701365401a2a69dcc77007a28b06c48d36be63ddd714"
+    }
+  ]
+}

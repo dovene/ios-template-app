@@ -1,0 +1,10 @@
+{
+  "commitish" : "1.7.0",
+  "iOS" : [
+    {
+      "name" : "SwiftyBeaver",
+      "hash" : "6186fe2502b9ba2bdc19df0536415db5f2a96c763c7959cc070c26e6c7852d16",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+    }
+  ]
+}

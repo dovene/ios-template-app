@@ -1,0 +1,5 @@
+github "ReactiveX/RxSwift" ~> 4.0
+github "Moya/Moya" ~> 13.0.0
+github "SwiftyBeaver/SwiftyBeaver"
+github "RxSwiftCommunity/RxDataSources" ~> 3.0
+github "pinterest/PINRemoteImage"
