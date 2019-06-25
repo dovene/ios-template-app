@@ -47,7 +47,7 @@ class MovieDetailViewModel: BaseViewModel {
         titleSubject.onNext(movie.title ?? "")
         releaseDateSubject.onNext(movie.releaseDate ?? "")
         overviewSubject.onNext(movie.overview ?? "")
-        popularitySubject.onNext("Popularité: \(String(describing: movie.popularity))")
+        popularitySubject.onNext("Popularité: \(movie.popularity ?? 0.0)")
         movieImageSubject.onNext(movie.getImageUrl())
         shareClickSubject.asObservable()
             .subscribe(onNext: {[weak self] in
