@@ -7,4 +7,4 @@ Furthermore you may find two branches that showcase the use of MVC and MVVM alon
 
 Carthage, Moya, RxSwift, SwiftBeaver and PinRemoteImage are third party libraries that were mixed together to build this project.
 
-And for those who enjoys both the taste of an apple and a lollipop you may find the same project developed in Android right here  https://github.com/dovene/TemplateAndroidApp.
+And for those who enjoy both the taste of an apple and a lollipop you may find the same project developed in Android right here  https://github.com/dovene/TemplateAndroidApp.
